@@ -1,6 +1,17 @@
 def join_array_remove_duplicate(arrayA, arrayB):
     # your code here
-    return []
+    array_gabungan = arrayA + arrayB
+    
+    nilai_unik = set()
+    hasil_array = []
+    
+    for nilai in array_gabungan:
+        if nilai not in nilai_unik:
+            nilai_unik.add(nilai)
+            hasil_array.append(nilai)
+    
+    return hasil_array
+
 
 if __name__ == '__main__':
     # Test cases
